@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Messenger Button with SVG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .messenger-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #0084FF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer;
+            animation: pulse 2s infinite;
+            transition: transform 0.2s;
+        }
+        .messenger-float:hover {
+            transform: scale(1.1) rotate(-5deg);
+            animation: none;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+    <a class="messenger-float" href="https://m.me/kh.hoangcute.khongconguoiyeuuu" target="_blank" title="Chat với Hoàng trên Messenger">
+        <svg viewBox="0 0 512 512">
+            <path d="M256.064,32C132.288,32,32,125.12,32,240c0,66.688,36.992,125.664,94.656,164.32
+                c-4.096,22.368-14.4,58.688-15.808,64.608c-2.464,10.176,3.776,10.048,7.936,7.296c3.264-2.176,51.808-33.984,72.896-47.424
+                c20.288,5.504,41.824,8.48,64.384,8.48c123.776,0,224.064-93.12,224.064-208C480.128,125.12,379.84,32,256.064,32z M286.208,300.928
+                l-53.44-57.44l-114.56,57.44l121.28-129.44l53.44,57.44l114.56-57.44L286.208,300.928z"/>
+        </svg>
+    </a>
+</body>
+</html>
