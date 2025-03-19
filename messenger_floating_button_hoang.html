@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Messenger Button</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .messenger-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #0084FF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer;
+            animation: pulse 2s infinite;
+            transition: transform 0.2s;
+        }
+        .messenger-float:hover {
+            transform: scale(1.1) rotate(-5deg);
+            animation: none;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .messenger-float img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <a class="messenger-float" href="https://m.me/kh.hoangcute.khongconguoiyeuuu" target="_blank" title="Chat với Hoàng trên Messenger">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Facebook_Messenger_4_Logo.svg" alt="Messenger">
+    </a>
+</body>
+</html>
